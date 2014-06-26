@@ -1,0 +1,47 @@
+﻿body
+{
+	margin: 0 auto;
+	font-family: 微软雅黑,arial;
+	font-size: 14px;
+	color:#eeeeee;
+}
+
+ul
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+li
+{
+	list-style: none;
+}
+
+a
+{
+	color:White;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #7F7F7F;
+}
+
+hr
+{
+	clear: both;
+	margin: 0;
+}
+
+.clear
+{
+	display: none;
+	clear: both;
+}
+div{overflow:hidden;}
+
+*:focus
+{
+    outline:none;
+}

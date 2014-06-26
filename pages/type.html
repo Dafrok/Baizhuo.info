@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="../css/type.css" rel="stylesheet" />
+    <script src="../js/jquery.min.js"></script>
+    <script>
+        
+        $(document).ready(function () {
+            var typedata = $.getJSON('/data/types.json', function (data) { return });
+            console.log(typedata);
+
+            $('.deftype').each(function () {
+                var d = $(this);
+                var dclass = d.attr('class').substring(d.attr('class').indexOf(' '), d.attr('class').length);
+                d.click(function () {
+                    d.toggleClass(dclass + '-active', dclass).toggleClass('deftype-active','deftype');
+                })
+            })
+
+        })
+
+    </script>
+</head>
+<body>
+    <div id="types">
+        <div id="deftype_calc">
+            <div>抗性计算器</div>
+            <div>
+                <table class="deflist" cellspacing="2">
+                    <tr><td><div class="deflist-def">防御方属性</div><div class="deflist-atk">攻击方倍率</div></td></tr>
+                    <tr>
+                        <td><div class="deftype color-normal"><span>[&nbsp;</span>普<span>&nbsp;]</span></div><div class="atktype">1</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="deftype color-fire"><span>[&nbsp;</span>火<span>&nbsp;]</span></div><div class="atktype">1</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="deftype color-water"><span>[&nbsp;</span>水<span>&nbsp;]</span></div><div class="atktype">1</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="deftype color-electic"><span>[&nbsp;</span>电<span>&nbsp;]</span></div><div class="atktype">1</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="deftype color-grass"><span>[&nbsp;</span>草<span>&nbsp;]</span></div><div class="atktype">1</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="deftype color-ice"><span>[&nbsp;</span>冰<span>&nbsp;]</span></div><div class="atktype">1</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="deftype color-fight"><span>[&nbsp;</span>斗<span>&nbsp;]</span></div><div class="atktype">1</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="deftype color-poison"><span>[&nbsp;</span>毒<span>&nbsp;]</span></div><div class="atktype">1</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="deftype color-ground"><span>[&nbsp;</span>地<span>&nbsp;]</span></div><div class="atktype">1</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="deftype color-fly"><span>[&nbsp;</span>飞<span>&nbsp;]</span></div><div class="atktype">1</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="deftype color-psycho"><span>[&nbsp;</span>超<span>&nbsp;]</span></div><div class="atktype">1</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="deftype color-bug"><span>[&nbsp;</span>虫<span>&nbsp;]</span></div><div class="atktype">1</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="deftype color-rock"><span>[&nbsp;</span>岩<span>&nbsp;]</span></div><div class="atktype">1</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="deftype color-ghost"><span>[&nbsp;</span>鬼<span>&nbsp;]</span></div><div class="atktype">1</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="deftype color-dragon"><span>[&nbsp;</span>龙<span>&nbsp;]</span></div><div class="atktype">1</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="deftype color-steel"><span>[&nbsp;</span>钢<span>&nbsp;]</span></div><div class="atktype">1</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="deftype color-dark"><span>[&nbsp;</span>恶<span>&nbsp;]</span></div><div class="atktype">1</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="deftype color-fairy"><span>[&nbsp;</span>仙<span>&nbsp;]</span></div><div class="atktype">1</div></td>
+                    </tr>
+                </table>
+
+                <br />
+                <div>
+                    <span>防御方特性：</span>
+                    <select>
+                        <option>浮游</option>
+                        <option>引火</option>
+                        <option>蓄电</option>
+                        <option>干燥皮肤</option>
+                        <option>神秘守护</option>
+                    </select>
+                </div>
+                <br />
+            </div>
+        </div>
+        <div id="atktype_calc">
+
+        </div>
+    </div>
+
+</body>
+</html>

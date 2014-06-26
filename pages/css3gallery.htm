@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CSS3 Test</title>
+    <link href="../css/html.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        html
+        {
+            width: 100%;
+            height: 100%;
+            background-color: hsl(2, 57%, 40%);
+            background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px,
+            transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px,
+            rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5)
+            169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px,
+            rgba(0,0,0,.5) 232px, transparent 232px), repeating-linear-gradient(270deg, transparent, transparent 50px,
+            rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px,
+            rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px,
+            rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px,
+            rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px), repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2)3px,
+            transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+        }
+        
+        
+        .bottom_bar
+        {
+            width: 100%;
+            height: 80px;
+            border-radius: 20px;
+            background-color: yellow;
+            background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px), repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px), repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+            overflow: hidden;
+            color: White;
+            text-align: center;
+            bottom: 0px;
+            overflow: visible;
+            position: fixed;
+        }
+        .circle_block
+        {
+            width: 200px;
+            height: 80px;
+            overflow:visible;
+            float:left;
+        }
+        .circle_block div
+        {
+            transform: scale(1);
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transition: all .3s ease-in-out;
+            width: 200px;
+            height: 80px;
+            border-radius: 20px;
+            background-color: #6699cc;
+            background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px), repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px), repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+            overflow: hidden;
+            color: White;
+            text-align: center;
+            box-shadow: 10px 10px 10px gray;
+        }
+        .circle_block div:hover
+        {
+            text-align: center;
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            transition: all .3s ease-in-out;
+            width: 563px;
+            height: 600px;
+            border-radius: 10px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            background-color: #6699cc;
+            background: url('../images/panghu.jpg') #6699cc no-repeat center;
+            border: 1px solid black;
+            overflow: hidden;
+            color: red;
+            box-shadow: 10px 10px 10px gray;
+        }
+        .shadow
+        {
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            width: 100px;
+            height: 50px;
+            box-shadow: 1px 1px 3px gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="bottom_bar">
+    </div>
+    <div class="circle_block">
+    <div></div>
+    </div>
+    <div class="circle_block">
+    <div></div>
+    </div>
+    <div class="circle_block">
+    <div></div>
+    </div>
+    <br />
+    <div class="shadow2">
+    </div>
+</body>
+</html>

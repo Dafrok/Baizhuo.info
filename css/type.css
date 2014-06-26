@@ -1,0 +1,226 @@
+﻿body {
+}
+
+.deflist {
+    width: 100%;
+}
+
+    .deflist tr td {
+        text-align: center;
+        color: black;
+        text-shadow: 1px 1px 2px white;
+    }
+
+.deftype, .atktype, .deflist-def, .deflist-atk, .atktype-effective, .atktype-poor, .atktype-block, .atktype-normal {
+    width: 50%;
+    line-height: 24px;
+    display: inline-block;
+    border: 1px solid silver;
+    background: white;
+}
+
+.deftype, .deflist-def {
+    border-radius: 10px 0 0 10px;
+    border-right: none;
+    background: white;
+}
+
+    .deftype span {
+        opacity:0;
+    }
+
+    .deftype:hover span,.deftype-active span {
+        opacity:100;
+    }
+
+.atktype, .deflist-atk, .atktype-effective, .atktype-poor, .atktype-block, .atktype-normal {
+    border-radius: 0 10px 10px 0;
+    border-left: none;
+}
+
+.atktype-normal {
+    background: white;
+}
+
+.atktype-effective {
+    background: #ff9999;
+}
+
+.atktype-poor {
+    background: #9999ff;
+}
+
+.atktype-block {
+    background: #777777;
+}
+
+
+.deftype:hover, .color-normal-active, .color-fire-active, .color-water-active, .color-electic-active, .color-grass-active, .color-ice-active, .color-fight-active, .color-poison-active, .color-ground-active, .color-fly-active, .color-psycho-active, .color-bug-active, .color-rock-active, .color-ghost-active, .color-dragon-active, .color-dark-active, .color-steel-active, .color-fairy-active {
+    color: black;
+    text-shadow: 1px 1px 2px white;
+    cursor: pointer;
+}
+
+.color-normal {
+    color: black;
+    background: #d0d0d0;
+}
+
+    .color-normal:hover, .color-normal-active {
+        background: linear-gradient(to right,white,#d0d0d0);
+    }
+
+.color-fight {
+    color: black;
+    background: #ee7755;
+}
+
+    .color-fight:hover, .color-fight-active {
+        background: linear-gradient(to right,white,#ee7755);
+    }
+
+
+.color-fly {
+    color: black;
+    background: #99bbee;
+}
+
+    .color-fly:hover, .color-fly-active {
+        background: linear-gradient(to right,white,#99bbee);
+    }
+
+.color-poison {
+    color: black;
+    background: #cc66ff;
+}
+
+    .color-poison:hover, .color-poison-active {
+        background: linear-gradient(to right,white,#cc66ff);
+    }
+
+.color-ground {
+    color: black;
+    background: #ffee66;
+}
+
+    .color-ground:hover, .color-ground-active {
+        background: linear-gradient(to right,white,#ffee66);
+    }
+
+.color-rock {
+    color: black;
+    background: #eedd88;
+}
+
+    .color-rock:hover, .color-rock-active {
+        background: linear-gradient(to right,white,#eedd88);
+    }
+
+.color-bug {
+    color: black;
+    background: #ccee44;
+}
+
+    .color-bug:hover, .color-bug-active {
+        background: linear-gradient(to right,white,#ccee44);
+    }
+
+.color-ghost {
+    background: #aa77aa;
+    color: black;
+}
+
+    .color-ghost:hover, .color-ghost-active {
+        background: linear-gradient(to right,white,#aa77aa);
+    }
+
+.color-steel {
+    background: #eeeeee;
+    color: black;
+}
+
+    .color-steel:hover, .color-steel-active {
+        background: linear-gradient(to right,white,#eeeeee);
+    }
+
+.color-fire {
+    background: #ff9944;
+    color: black;
+}
+
+    .color-fire:hover, .color-fire-active {
+        background: linear-gradient(to right,white,#ff9944);
+    }
+
+.color-water {
+    color: black;
+    background: #5599ff;
+}
+
+    .color-water:hover, .color-water-active {
+        background: linear-gradient(to right,white,#5599ff);
+    }
+
+
+.color-grass {
+    color: black;
+    background: #88ee55;
+}
+
+    .color-grass:hover, .color-grass-active {
+        background: linear-gradient(to right,white,#88ee55);
+    }
+
+.color-electic {
+    color: black;
+    background: #ffff44;
+}
+
+    .color-electic:hover, .color-electic-active {
+        background: linear-gradient(to right,white,#ffff44);
+    }
+
+.color-psycho {
+    background: #ff66ff;
+    color: black;
+}
+
+    .color-psycho:hover, .color-psycho-active {
+        background: linear-gradient(to right,white,#ff66ff);
+    }
+
+.color-ice {
+    background: #aaeeee;
+    color: black;
+}
+
+    .color-ice:hover, .color-ice-active {
+        background: linear-gradient(to right,white,#aaeeee);
+    }
+
+.color-dragon {
+    background: #aa66ff;
+    color: black;
+}
+
+    .color-dragon:hover, .color-dragon-active {
+        background: linear-gradient(to right,white,#aa66ff);
+    }
+
+.color-dark {
+    background: #aa8888;
+    color: black;
+}
+
+    .color-dark:hover, .color-dark-active {
+        background: linear-gradient(to right,white,#aa8888);
+    }
+
+.color-fairy {
+    background: #ffdddd;
+    color: black;
+}
+
+    .color-fairy:hover, .color-fairy-active {
+        background: linear-gradient(to right,white,#ffdddd);
+    }
